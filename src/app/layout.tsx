@@ -6,7 +6,7 @@ import { bodyFont } from '@/config/fonts';
 
 export const metadata: Metadata = {
   title: 'Control de inventario',
-  description: 'Gestiona y controla el inventario de tu negocio',
+  description: 'Gestiona y controla el inventario de tu negocio 1',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
