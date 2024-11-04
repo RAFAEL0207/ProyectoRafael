@@ -1,13 +1,11 @@
 'use client'
 import { useUIStore } from '../..'
-import { titleFont } from '@/config/fonts'
+import Image from "next/image";
 import { sidemenu_options } from '@/config/constants'
-
-
 import { SideMenuItem } from './SideMenuItem'
 import { LogoutButton } from './LogoutButton';
 import { CloseSideMenuButton } from './CloseSideMenuButton';
-import { Store01Icon } from 'hugeicons-react'
+
 
 export const SideMenu = () => {
 
@@ -26,9 +24,13 @@ export const SideMenu = () => {
             <aside className={isSideMeunuOpen ? 'sidemenu sidemenu-active' : 'sidemenu'}>
                 <div className='mb-8 flex items-center gap-2'>
                     <div className='bg-gradient text-2xl p-2 rounded-xl'>
-                        <Store01Icon />
+                    <Image
+                        width={240}
+                        height={20}
+                        src="/images/logo.png"
+                        alt=""
+                    />
                     </div>
-                    <h3 className={`${titleFont.className} font-extrabold text-2xl`}>Inventory</h3>
                 </div>
                 <ul className='flex flex-col gap-2'>
                     {
